@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BN Massas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="marca">
+            <!-- Espaço para a marca da padaria -->
+            <img src="" alt="Logo da BN Massas">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#apresentacao">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#pedido">Monte seu pedido</a></li>
+                <li><a href="#endereco">Endereço</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="apresentacao">
+            <h1>BN Massas</h1>
+            <p>
+                Massas artesanais feitas com carinho, qualidade e sabor para deixar
+                suas refeições ainda mais especiais.
+            </p>
+        </section>
+
+        <section id="cardapio">
+            <h2>Cardápio</h2>
+
+            <div class="lista-produtos">
+
+                <article class="produto" data-nome="Salgado de carne com queijo" data-preco="5.00">
+                    <img src="" alt="Foto do Produto 1">
+                    <h3>Salgado de carne com queijo</h3>
+                    <p>Preço: R$ 5,00</p>
+                    <button type="button" class="botao-adicionar">
+                        Monte seu pedido
+                    </button>
+                </article>
+
+                <article class="produto" data-nome="Mini-pizza" data-preco="6.00">
+                    <img src="" alt="Foto do Produto 2">
+                    <h3>Mini-pizza</h3>
+                    <p>Preço: R$ 6,00</p>
+                    <button type="button" class="botao-adicionar">
+                        Monte seu pedido
+                    </button>
+                </article>
+
+                <article class="produto" data-nome="Mini sanduíche de frango" data-preco="4.00">
+                    <img src="" alt="Foto do Produto 3">
+                    <h3>Mini sanduíche de frango</h3>
+                    <p>Preço: R$ 4,00</p>
+                    <button type="button" class="botao-adicionar">
+                        Monte seu pedido
+                    </button>
+                </article>
+
+                <!-- 
+
+          <article class="produto" data-nome="Nome do Produto" data-preco="0.00">
+            <img src="" alt="Foto do Nome do Produto">
+            <h3>Nome do Produto</h3>
+            <p>Preço: R$ 0,00</p>
+            <button type="button" class="botao-adicionar">
+              Monte seu pedido
+            </button>
+          </article>
+        -->
+
+            </div>
+        </section>
+
+        <section id="pedido">
+            <h2>Meu Pedido</h2>
+
+            <div id="lista-pedido">
+                <!-- A lista de produtos escolhidos será gerada aqui pelo js -->
+            </div>
+
+            <div id="total-pedido">
+                <p>Total: R$ <span id="valor-total">0,00</span></p>
+            </div>
+
+            <div id="dados-cliente">
+                <h3>Dados para o pedido</h3>
+
+                <label for="nome-cliente">Nome:</label>
+                <input type="text" id="nome-cliente" name="nome-cliente">
+
+                <label for="observacoes">Endereço e observações:</label>
+                <textarea id="observacoes" name="observacoes"></textarea>
+            </div>
+
+            <button type="button" id="enviar-whatsapp">
+                Enviar pedido pelo WhatsApp
+            </button>
+        </section>
+
+        <section id="endereco">
+            <h2>Endereço</h2>
+
+            <address>
+                Rua José Valentim de Melo, nº 638</br>
+                Bairro Centro<br>
+                Lagoa Nova - Rio Grande do Norte
+            </address>
+
+            <div id="mapa">
+                <!--inserir mapa futuramente -->
+            </div>
+        </section>
+
+        <section id="contatos">
+            <h2>Contatos e Redes Sociais</h2>
+
+            <ul>
+                <li>WhatsApp: <a href="https://wa.me/558481737412">(84) 8173-7412</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/bnmassascia/">@bnmassascia</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/bnmassas/">BN Massas</a></li>
+                <li>E-mail: <a href="mailto:contato@bnmassas.com">contato@bnmassas.com</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BN Massas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
